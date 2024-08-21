@@ -3,6 +3,7 @@ import { Testimonial } from "@/components/Testimonials-Client"
 import {About} from '@/components/About'
 import { Footer } from "@/components/Footer";
 import { FQ } from "@/components/F&Q";
+import { Projects } from "@/components/Portfolio-Project";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="max-w-7xl w-full overflow-clip">
         <Services />
         <Testimonial />
+        <Projects />
         <FQ />
         <About />
         <Footer />
