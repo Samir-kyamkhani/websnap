@@ -1,6 +1,5 @@
 import React from "react";
 import CardSpotlight from "@/components/ui/card-spotlight";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
 import Link from "next/link";
 import MagicButton from "./ui/tailwindcss-buttons";
 

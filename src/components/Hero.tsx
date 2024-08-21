@@ -2,10 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import MagicButton from "./ui/tailwindcss-buttons";
 import Link from "next/link";
-import { FaLocationArrow } from "react-icons/fa6";
 
 export default function Hero() {
   const [visible, setVisible] = useState(false);

@@ -1,5 +1,5 @@
 "use client";
-import { TextGenerateEffect } from "../components/ui/Text-generate-effect";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const words = `Websnap was founded on the belief that every business deserves a powerful digital presence. We are a team of passionate web developers, designers, and strategists who love turning ideas into impactful online experiences. Our mission is to empower businesses to thrive in the digital landscape through innovative and customized web solutions. Guided by our core values of creativity, integrity, and excellence, we are committed to exceeding our clients' expectations in every project.`;
 
