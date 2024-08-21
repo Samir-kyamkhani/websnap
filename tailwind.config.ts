@@ -1,13 +1,9 @@
 import type { Config } from "tailwindcss";
-
 const svgToDataUri = require("mini-svg-data-uri");
-
 const colors = require("tailwindcss/colors");
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
+const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 
-const config = {
+const config: Config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -26,9 +22,6 @@ const config = {
       },
     },
     extend: {
-      boxShadow: {
-        input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
-      },
       colors: {
         black: {
           DEFAULT: "#000",
@@ -93,10 +86,6 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        'loop-scroll': {
-          from: {transform: "translateX(100%)"},
-          to: { transform: "translateX(-100%)" },
-        },
         spotlight: {
           "0%": {
             opacity: "0",
@@ -104,7 +93,7 @@ const config = {
           },
           "100%": {
             opacity: "1",
-            transform: "translate(-50%,-40%) scale(1)",
+            transform: "translate(-50%, -40%) scale(1)",
           },
         },
         shimmer: {
@@ -113,6 +102,14 @@ const config = {
           },
           to: {
             backgroundPosition: "-200% 0",
+          },
+        },
+        "loop-scroll": {
+          from: {
+            transform: "translateX(-100%)",
+          },
+          to: {
+            transform: "translateX(100%)",
           },
         },
         moveHorizontal: {
@@ -153,16 +150,11 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
       },
       animation: {
-        'loop-scroll': 'loop-scroll 30s linear infinite',
+        "loop-scroll": "loop-scroll 20s linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        fadeIn: 'fadeIn 1s ease-in-out',
         spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 2s linear infinite",
         first: "moveVertical 30s ease infinite",
@@ -201,7 +193,7 @@ const config = {
       );
     },
   ],
-} satisfies Config;
+};
 
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));

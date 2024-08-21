@@ -1,10 +1,15 @@
+import { About } from "@/components/About";
 import { Approach } from "@/components/Approach";
 import BrandLogoSlidAnimation from "@/components/BrandLogoSlidAnimation";
 import { ContactUs } from "@/components/ContactUs";
 import Cta from "@/components/Cta";
+import { FQ } from "@/components/F&Q";
+import { Footer } from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import { Services } from "@/components/Services";
 import { Showcase } from "@/components/Showcase";
+import { Testimonial } from "@/components/Testimonials-Client";
 
 export default function Home() {
   return (
@@ -14,15 +19,14 @@ export default function Home() {
         <Hero />
         <BrandLogoSlidAnimation />
         <Showcase />
+        <Testimonial />
+        <Services />
         <Cta />
         <Approach />
+        <About />
+        <FQ />
         <ContactUs />
-        {/* <Grid />
-      <Projects />
-      <Clients />
-      <Experience />
-      <Approach />
-      <Footer /> */}
+        <Footer />
       </div>
     </main>
   );
