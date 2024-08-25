@@ -40,9 +40,9 @@ export function Footer() {
   return (
     <div className="flex items-center justify-between m-3 ">
       <div className="text-[rgb(198,198,198)] pt-6">
-        <h4>Copyright ©2024 Websnap</h4>
+        <h4 className="text-sm sm:text-lg">Copyright ©2024 Websnap</h4>
       </div>
-      <div className="">
+      <div className="mb-[-1rem]">
         <FloatingDock items={links} />
       </div>
     </div>

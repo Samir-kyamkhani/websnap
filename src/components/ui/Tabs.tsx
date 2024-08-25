@@ -40,7 +40,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-row items-center  justify-start [perspective:1000px] relative overflow-x-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full py-5 ",
+          "flex flex-row items-center  justify-start [perspective:1000px] relative top-[-5rem] md:top-0 overflow-y-clip overflow-x-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full py-5 no-scrollbar",
           containerClassName
         )}
       >
@@ -55,7 +55,7 @@ export const Tabs = ({
             className={cn(
               "relative px-4 py-2 rounded-full",
               tabClassName,
-              "text-sm md:text-base lg:text-lg" // Responsive text size
+              "no-scrollbar text-sm md:text-base lg:text-lg" // Responsive text size
             )}
             style={{
               transformStyle: "preserve-3d",

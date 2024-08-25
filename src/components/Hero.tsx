@@ -7,18 +7,10 @@ import MagicButton from "./ui/tailwindcss-buttons";
 import Link from "next/link";
 
 export default function Hero() {
-  const [visible, setVisible] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setVisible(true);
-    }, 2000); // Delay to allow the page to render before starting the animation
-
-    return () => clearTimeout(timer);
-  }, []);
-
+  
   return (
-    <div className="pb-20 pt-[0rem] transition-opacity duration-1000">
+    <div className="pb-20 pt-[0rem] transition-opacity duration-1000 mt-[10rem]">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen "
@@ -37,17 +29,17 @@ export default function Hero() {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-[50rem] lg:max-[60vw] flex flex-col items-center">
-          <h2 className={`${visible ? 'opacity-100 animate-fadeIn' : 'opacity-0'} uppercase tracking-widest text-xs text-center text-blue-100 max-w-80`}>
+          <h2 className={` uppercase tracking-widest text-xs text-center text-blue-100 max-w-80`}>
             ✨ Your work spaced perfected
           </h2>
           <TextGenerateEffect
             className="text-center  text-[33px] md:text-5xl lg:text-5xl "
             words="Crafting Your Digital Presence, One Snap at a Time"
           />
-          <p className={`${visible ? 'opacity-100 animate-fadeIn' : 'opacity-0'} text-center md:tracking-wider mb-10 text-sm md:text-lg lg:text-1xl`}>
+          <p className={` text-center md:tracking-wider mb-10 text-sm md:text-lg lg:text-1xl`}>
             At Websnap, we turn your vision into reality with innovative web development and design solutions that stand out and engage your audience.
           </p>
-          <div className={`${visible ? 'opacity-100 animate-fadeIn' : 'opacity-0'}`}>
+          <div className={``}>
             <Link href="#about">
               <MagicButton 
                 title="Book a Free Consultation" 

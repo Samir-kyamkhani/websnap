@@ -5,7 +5,7 @@ import { products } from "@/data";
 
 export function Showcase() {
   return (
-    <div className="mt-16 ">
+    <div id="portfolio" className="mt-16 ">
         <HeroParallax products={products}  />
     </div>
   )
