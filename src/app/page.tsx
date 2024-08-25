@@ -7,6 +7,7 @@ import { FQ } from "@/components/F&Q";
 import { Footer } from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import { Projects } from "@/components/Projects";
 import { Services } from "@/components/Services";
 import { Showcase } from "@/components/Showcase";
 import { Testimonial } from "@/components/Testimonials-Client";
@@ -20,6 +21,7 @@ export default function Home() {
         <BrandLogoSlidAnimation />
         <Showcase />
         <Testimonial />
+        <Projects />
         <Services />
         <Cta />
         <Approach />
