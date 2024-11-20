@@ -20,8 +20,8 @@ export default function Home() {
         <Hero />
         <BrandLogoSlidAnimation />
         <Showcase />
-        <Testimonial />
         <Projects />
+        <Testimonial />
         <Services />
         <Cta />
         <Approach />
